@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookService } from './book.service';
 import { CreateAuthorComponent } from './create-author/create-author.component';
+import { ToastrModule} from 'ngx-toastr';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,8 +22,13 @@ import { CreateAuthorComponent } from './create-author/create-author.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    FormsModule,
+    ToastrModule.forRoot({
+      timeOut: 1000,
+      positionClass: 'toast-bottom-right'
+    })
+    ],
   providers: [AuthorService, BookService],
   bootstrap: [AppComponent]
 })

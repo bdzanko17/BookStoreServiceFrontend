@@ -8,7 +8,6 @@ import { Author } from './author';
   providedIn: 'root'
 })
 export class AuthorService {
-  [x: string]: any;
   private _url: string = "http://localhost:7000/author";
   constructor(private http: HttpClient) { }
   
@@ -20,8 +19,7 @@ export class AuthorService {
 
   addAuthor(author: Author): Observable<any>{
     return this.http.post(this._url,author);
-   
-
+  
 }
 
 }
