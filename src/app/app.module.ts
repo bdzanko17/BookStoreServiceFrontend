@@ -8,12 +8,14 @@ import { AuthorService } from './author.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookService } from './book.service';
+import { CreateAuthorComponent } from './create-author/create-author.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorListComponent,
-    BookListComponent
+    BookListComponent,
+    CreateAuthorComponent
   ],
   imports: [
     BrowserModule,

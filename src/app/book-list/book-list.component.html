@@ -1,13 +1,15 @@
 <h2>Books</h2>
 <ul class="book-list">
-  <li *ngFor="let book of books">
-      
-{{book.title}} {{book.genre}}
-  <div class="card-body">
-        Authors:
-        <span class="card-text" *ngFor="let author of book.authors; let isLast=last">
-          <small class="text-muted">{{author.name}}{{isLast ? '' : ', '}}</small>
+  <li class="lista" *ngFor="let book of books">
+
+    Title: {{book.title}}
+    <br>
+    Genre: {{book.genre}}
+    <div class="card-body">
+      Authors:
+      <span class="card-text" *ngFor="let author of book.authors; let isLast=last">
+        <small class="text-muted">{{author.name}}{{isLast ? '' : ', '}}</small>
       </span>
-      </div>
+    </div>
   </li>
 </ul>

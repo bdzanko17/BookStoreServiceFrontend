@@ -1,20 +1,18 @@
 ul{
     border: solid 1px;
+    
 }
 
 ul:hover{
     background-color: bisque;
 }
+li{
+        cursor: pointer;
 
-.card.selected{
-    border: solid 1px rgb(255, 0, 0) !important;
 }
-
-.card{
-   cursor: pointer; 
-}
-
-.card:hover{
-    border: solid 1px rgb(255, 0, 0) !important;
-    margin-top: -4px !important;
-}  
+ li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  
