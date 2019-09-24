@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 })
 export class BookService {
 
-  private _url: string = "http://localhost:7000/book";
+  private _url: string = "http://localhost:7000/books";
   constructor(private http: HttpClient) { }
 
   getBooks(): Observable<Book[]>{

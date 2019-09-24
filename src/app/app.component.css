@@ -1,0 +1,24 @@
+h1{
+    background-color: mintcream;
+    text-align: center;
+    color: turquoise;
+}
+.btn-group .button {
+    background-color: white; /* Green */
+    border: 2px solid black;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ 
+  .btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  .btn-group .button:hover {
+    background-color: lightslategray
+  }

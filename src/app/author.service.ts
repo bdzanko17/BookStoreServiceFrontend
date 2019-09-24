@@ -8,7 +8,7 @@ import { Author } from './author';
   providedIn: 'root'
 })
 export class AuthorService {
-  private _url: string = "http://localhost:7000/author";
+  private _url: string = "http://localhost:7000/authors";
   constructor(private http: HttpClient) { }
   
   getAuthors(): Observable<Author[]>{

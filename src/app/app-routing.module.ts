@@ -6,9 +6,9 @@ import { CreateAuthorComponent } from './create-author/create-author.component';
 
 
 const routes: Routes = [  
-    { path: 'author', component: AuthorListComponent},
-    { path: 'book', component: BookListComponent},
-    { path: 'authors', component: CreateAuthorComponent}
+    { path: 'authors', component: AuthorListComponent},
+    { path: 'books', component: BookListComponent},
+    { path: 'author', component: CreateAuthorComponent}
 
 ];
 
