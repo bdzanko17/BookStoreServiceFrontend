@@ -18,5 +18,9 @@ export class BookService {
     return this.http.get<Book[]>(this._url, {headers: headersList});
   }
   
+  addBook(book: Book): Observable<any>{
+    return this.http.post(this._url,book);
+  
+  }
   
 }

@@ -10,14 +10,16 @@ import { BookListComponent } from './book-list/book-list.component';
 import { BookService } from './book.service';
 import { CreateAuthorComponent } from './create-author/create-author.component';
 import { ToastrModule} from 'ngx-toastr';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { CreateBookComponent } from './create-book/create-book.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorListComponent,
     BookListComponent,
-    CreateAuthorComponent
+    CreateAuthorComponent,
+    CreateBookComponent
   ],
   imports: [
     BrowserModule,

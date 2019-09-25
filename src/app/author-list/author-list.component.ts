@@ -20,5 +20,10 @@ export class AuthorListComponent implements OnInit {
     this.selectedAuthor = author;
   }
   
+  deleteAuthor(author : Author){
+    this._authorService.deleteAuthor(author)
+     .subscribe(() => this.ngOnInit());
+  }
+  
   
 }

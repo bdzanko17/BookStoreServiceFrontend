@@ -21,5 +21,10 @@ export class AuthorService {
     return this.http.post(this._url,author);
   
 }
+  deleteAuthor(author:Author):Observable<{}>{
+    console.log(author.id);
+    
+    return this.http.delete(this._url+"/"+author.id);
+  }
 
 }
