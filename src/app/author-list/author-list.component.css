@@ -4,6 +4,10 @@
   padding: 0;
   width: 15em;
 }
+h2{
+  color: seagreen;
+  background-color: whitesmoke
+}
 .author-list li {
   cursor: pointer;
   position: relative;
@@ -40,4 +44,11 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+.flex-container{
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-container .btn-info{
+  cursor: pointer;
 }

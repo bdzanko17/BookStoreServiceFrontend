@@ -2,6 +2,7 @@ h1{
     background-color: mintcream;
     text-align: center;
     color: turquoise;
+    
 }
 .btn-group .button {
     background-color: white; /* Green */
@@ -16,7 +17,7 @@ h1{
   }
  
   .btn-group .button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
+    border-right: none; 
   }
   
   .btn-group .button:hover {

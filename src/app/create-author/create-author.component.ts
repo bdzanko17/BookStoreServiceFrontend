@@ -16,6 +16,7 @@ export class CreateAuthorComponent{
  
   onSubmit(){
     console.log(this.newAuthor);
+    
     this._authorService.addAuthor(this.newAuthor)
       .subscribe(()=> {this._location.back();
       this.toastr.success("successs");

@@ -1,7 +1,6 @@
 <h2>Books</h2>
-<ul class="book-list">
-  <li class="lista" *ngFor="let book of books">
-
+<ul class="book-list" *ngIf="books.length > 0">
+  <li class="lista" *ngFor="let book of books" >
     Title: {{book.title}}
     <br>
     Genre: {{book.genre}}
