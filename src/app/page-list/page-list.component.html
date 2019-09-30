@@ -1,0 +1,7 @@
+<h2>Pages</h2>
+<ul class="pages-list">
+  <li *ngFor="let page of pages">
+    <span class="badge">{{page.id}}</span> {{page.book.genre}}
+  </li>
+</ul>
+<button routerLink="/page" type="button" class="addPage">Add new page</button>

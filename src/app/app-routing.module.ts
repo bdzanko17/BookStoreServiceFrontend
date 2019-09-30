@@ -4,13 +4,17 @@ import { AuthorListComponent } from './author-list/author-list.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { CreateAuthorComponent } from './create-author/create-author.component';
 import { CreateBookComponent } from './create-book/create-book.component';
+import { PageListComponent } from './page-list/page-list.component';
+import { CreatePageComponent } from './create-page/create-page.component';
 
 
 const routes: Routes = [  
     { path: 'authors', component: AuthorListComponent},
     { path: 'books', component: BookListComponent},
     { path: 'author', component: CreateAuthorComponent},
-    { path: 'book', component: CreateBookComponent}
+    { path: 'book', component: CreateBookComponent},
+    { path: 'pages', component: PageListComponent},
+    { path: 'page', component: CreatePageComponent}
 
 ];
 
@@ -25,5 +29,7 @@ export class AppRoutingModule {
   AuthorListComponent,
   BookListComponent,
   CreateAuthorComponent,
-  CreateBookComponent
+  CreateBookComponent,
+  PageListComponent,
+  CreatePageComponent
  ]

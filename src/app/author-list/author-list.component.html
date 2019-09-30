@@ -1,12 +1,12 @@
 <h2>Authors</h2>
 <ul class="author-list">
   <li *ngFor="let author of authors" [class.selected]="author === selectedAuthor" (click)="onSelect(author)">
-    <span class="badge">{{author.id}}</span> {{author.name}} 
+    <span class="badge">{{author.id}}</span> {{author.name}}
+
   </li>
 </ul>
 <div class="flex-container">
-
-<button routerLink="/author" type="button" class="btn-info">Add new author</button>
-<button  type="button" class="btn-info" (click)="deleteAuthor(selectedAuthor)">Delete author</button>
-
+  <button routerLink="/author" type="button" class="btn-info">Add new author</button>
+  <button type="button" class="btn-info" (click)="deleteAuthor(selectedAuthor)">Delete author</button>
 </div>
+

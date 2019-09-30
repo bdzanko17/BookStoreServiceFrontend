@@ -1,3 +1,5 @@
+import { Book } from './book';
+
 export class Author {
     constructor(
     public id: number,

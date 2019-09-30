@@ -11,7 +11,10 @@ import { BookService } from './book.service';
 import { CreateAuthorComponent } from './create-author/create-author.component';
 import { ToastrModule} from 'ngx-toastr';
 import { FormsModule } from '@angular/forms';
-import { CreateBookComponent } from './create-book/create-book.component'
+import { CreateBookComponent } from './create-book/create-book.component';
+import { PageListComponent } from './page-list/page-list.component';
+import { CreatePageComponent } from './create-page/create-page.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { CreateBookComponent } from './create-book/create-book.component'
     AuthorListComponent,
     BookListComponent,
     CreateAuthorComponent,
-    CreateBookComponent
+    CreateBookComponent,
+    PageListComponent,
+    CreatePageComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

@@ -1,0 +1,20 @@
+<form #pageFrom="ngForm" style="max-width: 20rem;" (ngSubmit)="onSubmit()">
+  <br>
+  <div class="form-group">
+    <label>Input the ordinal number of page</label><br>
+    <input type="text" class="form-control" placeholder="Ordinal number..." name="ordinalNumber"
+      [(ngModel)]="newPage.ordinalNumber">
+    <br>
+    <label>Input the content of page</label><br>
+    <input type="text" class="form-control" placeholder="Content..." name="Content" [(ngModel)]="newPage.content">
+  </div>
+  <ul class="book-list">
+    <li *ngFor="let book of books" (click)="onSelectedBook(book)">
+      <span class="badge">{{book.id}}</span> {{book.title}}
+
+    </li>
+  </ul>
+  <div *ngIf="selectedBook">
+    <h2>{{selectedBook.title}} selected</h2>
+  </div>
+  <button style="margin-left: 20px" class="btn btn-primary" type="submit"> Add book</button>
