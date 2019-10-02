@@ -1,0 +1,15 @@
+span.badge.pull-left {
+    margin-right: 10px;
+    width: 30px;
+  }
+  .page-list {
+    width: 25em;
+    height: 40px;
+  }
+  
+  .page-list.list-group-item{
+    cursor: pointer;
+  }
+  .page-list.list-group-item:hover{
+  background-color: mediumseagreen;
+  }

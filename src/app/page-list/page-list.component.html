@@ -1,9 +1,10 @@
 <div class="container-fluid">
-
   <h2>Pages</h2>
-  <ul class="pages-list">
+  <ul class="list-group ">
     <li *ngFor="let page of pages">
-      <span class="badge">{{page.ordinalNumber}}</span> {{page.book.genre}}
+        <div class="page-list list-group-item">
+      <span class="badge pull-left">{{page.ordinalNumber}}</span> {{page.book.genre}}
+        </div>
     </li>
   </ul>
   <button routerLink="/page" type="button" class="addPage">Add new page</button>
