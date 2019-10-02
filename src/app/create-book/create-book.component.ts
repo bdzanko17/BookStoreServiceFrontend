@@ -12,7 +12,7 @@ import { Location } from '@angular/common';
 })
 export class CreateBookComponent implements OnInit {
 
-  newBook = new Book(1, '', '', null);
+  newBook = new Book(1, '', '', null,null);
   public authors = [];
   selectedAuthor: Author;
   selectedAuthors = [];

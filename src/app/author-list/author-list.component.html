@@ -1,12 +1,14 @@
-<h2>Authors</h2>
-<ul class="author-list">
-  <li *ngFor="let author of authors" [class.selected]="author === selectedAuthor" (click)="onSelect(author)">
-    <span class="badge">{{author.id}}</span> {{author.name}}
-
-  </li>
-</ul>
-<div class="flex-container">
-  <button routerLink="/author" type="button" class="btn-info">Add new author</button>
-  <button type="button" class="btn-info" (click)="deleteAuthor(selectedAuthor)">Delete author</button>
+<div class="container-fluid">
+  <h2>Authors</h2>
+  <ul class="list-group ">
+    <li *ngFor="let author of authors" (click)="onSelect(author)">
+      <div class="author-list list-group-item">
+        <span class="badge pull-left">{{author.id}}</span> {{author.name}}
+      </div>
+    </li>
+  </ul>
+  <div class="btn-group" role="group" aria-label="Basic example">
+      <button routerLink="/author" type="button"class="btn btn-secondary">Add new author</button>
+    <button type="button" class="btn btn-secondary" (click)="deleteAuthor(selectedAuthor)">Delete author</button>
+  </div>
 </div>
-

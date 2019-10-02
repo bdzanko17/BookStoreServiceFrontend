@@ -15,4 +15,27 @@ li{
     background-color: #DDD;
     left: .1em;
   }
+.container{
+   
+    background-color: red;
+}
+
+
+
+ .aaa{
+     background-color: red;
+ }
+
+ .conent{
+    overflow-wrap: break-word;
+ }
+
+ .stranica{
+     background-color: #607D8B;
   
+    margin: 10px;
+   border: 1px solid black;
+
+    
+ }
+

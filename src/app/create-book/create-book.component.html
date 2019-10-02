@@ -1,5 +1,6 @@
 
-    <form #bookFrom="ngForm" style="max-width: 20rem;" (ngSubmit)="onSubmit()">
+    <div class="jumbotron">
+    <form  #bookFrom="ngForm" style="max-width: 20rem;" (ngSubmit)="onSubmit()">
     <br>
     <div class="form-group">
       <label>Input the title of book</label><br>
@@ -8,13 +9,16 @@
       <label>Input the genre of book</label><br>
       <input type="text" class="form-control"  placeholder="Genre..." name="genre" [(ngModel)]="newBook.genre">
     </div>
-<ul class="author-list">
-    <li *ngFor="let author of authors" (click)="onSelect(author)">
-      <span class="badge">{{author.id}}</span> {{author.name}} 
-       
-    </li>
-  </ul>
+    <ul class="list-group ">
+        <li *ngFor="let author of authors" (click)="onSelect(author)">
+          <div class="author-list list-group-item">
+            <span class="badge pull-left">{{author.id}}</span> {{author.name}}
+          </div>
+        </li>
+      </ul>
   <div *ngIf= "selectedAuthor">
     <h2>{{selectedAuthor.name}} selected</h2>
   </div>
   <button style="margin-left: 20px" class="btn btn-primary" type="submit"> Add book</button>
+    </form>
+    </div>
