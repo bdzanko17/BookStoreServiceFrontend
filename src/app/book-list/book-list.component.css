@@ -23,7 +23,7 @@ li{
 
 
  .aaa{
-     background-color: red;
+     background-color: chartreuse;
  }
 
  .conent{
@@ -31,7 +31,7 @@ li{
  }
 
  .stranica{
-     background-color: #607D8B;
+     background-color: lemonchiffon;
   
     margin: 10px;
    border: 1px solid black;
@@ -42,4 +42,9 @@ li{
 .center
 {
         text-align: center;
+        color: chocolate;
+        background-color: rosybrown;
 }
+ul{
+    list-style-type: none;
+    }

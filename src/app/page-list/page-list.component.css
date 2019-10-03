@@ -13,3 +13,6 @@ span.badge.pull-left {
   .page-list.list-group-item:hover{
   background-color: mediumseagreen;
   }
+  ul{
+    list-style-type: none;
+    }

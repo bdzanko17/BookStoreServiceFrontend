@@ -9,6 +9,7 @@
       <label>Input the genre of book</label><br>
       <input type="text" class="form-control"  placeholder="Genre..." name="genre" [(ngModel)]="newBook.genre">
     </div>
+    <span>Chose author</span>
     <ul class="list-group ">
         <li *ngFor="let author of authors" (click)="onSelect(author)">
           <div class="author-list list-group-item">
@@ -17,6 +18,7 @@
         </li>
       </ul>
   <div *ngIf= "selectedAuthor">
+
     <h2>{{selectedAuthor.name}} selected</h2>
   </div>
   <button style="margin-left: 20px" class="btn btn-primary" type="submit"> Add book</button>

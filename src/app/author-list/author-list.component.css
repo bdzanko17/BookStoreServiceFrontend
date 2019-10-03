@@ -29,3 +29,6 @@ background-color: mediumseagreen;
 .flex-container .btn-info{
   cursor: pointer;
 }
+ul{
+list-style-type: none;
+}
