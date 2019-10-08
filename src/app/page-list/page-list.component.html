@@ -2,9 +2,9 @@
   <h2>Pages</h2>
   <ul class="list-group ">
     <li *ngFor="let page of pages">
-        <div class="page-list list-group-item">
-      <span class="badge pull-left">{{page.ordinalNumber}}</span> Book title:  {{page.book.title}}
-        </div>
+      <div class="page-list list-group-item">
+        <span class="badge pull-left">{{page.ordinalNumber}}</span> Book title: {{page.book.title}}
+      </div>
     </li>
   </ul>
   <button routerLink="/page" type="button" class="addPage">Add new page</button>

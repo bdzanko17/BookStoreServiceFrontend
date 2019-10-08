@@ -10,12 +10,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'BookStore';
   constructor(private authorService: AuthorService, private router: Router) {
   }
+  title = 'BookStore';
   findedAuthor: Author;
   x: number;
   authorIsSelected = false;
+
   findAuthor(x) {
     this.authorIsSelected = false;
     console.log(x);

@@ -40,7 +40,7 @@ export class CreateBookComponent implements OnInit {
   click(): void {
     this.noAuthor = true;
     console.log(this.noAuthor);
-    
+
   }
 
 }
