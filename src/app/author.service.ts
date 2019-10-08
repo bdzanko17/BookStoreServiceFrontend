@@ -27,5 +27,11 @@ export class AuthorService {
     
     return this.http.delete(this._url+"/"+author.id);
   }
+  getAuthor(x):Observable<Author>{
+    let headersList = new HttpHeaders();
+    headersList = headersList.append('Access-Control-Allow-Origin', '*');
+    return this.http.get<Author>(this._url+"/"+x,{headers : headersList});
+  }
+
 
 }

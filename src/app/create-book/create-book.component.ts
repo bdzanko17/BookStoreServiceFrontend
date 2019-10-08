@@ -12,10 +12,11 @@ import { Location } from '@angular/common';
 })
 export class CreateBookComponent implements OnInit {
 
-  newBook = new Book(1, '', '', null,null);
+  newBook = new Book(1, '', '', null, null);
   public authors = [];
   selectedAuthor: Author;
   selectedAuthors = [];
+  noAuthor = false;
   constructor(private bookService: BookService, private _location: Location, private toastr: ToastrService, private authorService: AuthorService) { }
 
   ngOnInit(): void {
@@ -35,6 +36,11 @@ export class CreateBookComponent implements OnInit {
   onSelect(author: Author): void {
     this.selectedAuthor = author;
     this.selectedAuthors.push(this.selectedAuthor.id)
+  }
+  click(): void {
+    this.noAuthor = true;
+    console.log(this.noAuthor);
+    
   }
 
 }

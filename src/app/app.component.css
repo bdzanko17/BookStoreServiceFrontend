@@ -1,25 +1,57 @@
-h1{
-    background-color: mintcream;
-    text-align: center;
-    color: turquoise;
-    
+h1 {
+  background-color: mintcream;
+  text-align: center;
+  color: turquoise;
 }
+
 .btn-group .button {
-    background-color: white; /* Green */
-    border: 2px solid black;
-    color: black;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-  }
- 
-  .btn-group .button:not(:last-child) {
-    border-right: none; 
-  }
-  
-  .btn-group .button:hover {
-    background-color: lightslategray
-  }
+  background-color: white;
+  /* Green */
+  border: 2px solid black;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.author{
+  cursor: pointer;
+}
+.btn-group .button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group .button:hover {
+  background-color: lightslategray
+}
+.stranica {
+  background-color: rgb(100, 100, 230);
+  margin: 10px;
+  border: 5px solid whitesmoke;
+  height: 300px;
+  width: 200px;
+}
+
+.aaa {
+  position: relative;
+  top: 50%;
+}
+.booktitle {
+  text-align: center;
+  background: rosybrown;
+  color: red;
+}
+.form-control{
+  width: 205px;
+}
+button.submit{
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+}
+.centerButton{
+  width: 15%;
+}

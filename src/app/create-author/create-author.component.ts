@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./create-author.component.css']
 })
 export class CreateAuthorComponent{
-  newAuthor = new Author(null,'');
+  newAuthor = new Author(null,'',null);
 
   constructor(private _authorService:AuthorService, private _location: Location, private toastr:ToastrService) { }
  

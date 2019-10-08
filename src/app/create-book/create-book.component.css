@@ -1,16 +1,19 @@
+.author-list li {
+  cursor: pointer;
+}
 
-  .author-list li {
-    cursor: pointer;
-  }
-  span.badge.pull-left {
-    margin-right: 10px;
-    width: 30px;
-  }
-  
-  .author-list.list-group-item{
-    cursor: pointer;
-  }
-  .author-list.list-group-item:hover{
+span.badge.pull-left {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.author-list.list-group-item {
+  cursor: pointer;
+}
+
+.author-list.list-group-item:hover {
   background-color: mediumseagreen;
-  }
- 
+}
+.btn-group{
+  display: flex;
+}

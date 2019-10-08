@@ -14,8 +14,6 @@
     </li>
   </ul>
   <button routerLink="/book" type="button" class="btn btn-danger">Add new book</button>
-
-  
   <div class="row" *ngIf="selectedBook">
     <div class="container-fluid">
       <div class="center">
@@ -25,7 +23,6 @@
     <div class="col-xs-12 col-md-6 col-lg-4" *ngFor="let page of selectedBook.pages;  let isLast=last ">
       <div class="stranica">
         <div class="aaa"> Ordinal number: {{page.ordinalNumber}}</div>
-        <br>
         <div class="conent">
           Content: <br>
           {{page.content}}</div>

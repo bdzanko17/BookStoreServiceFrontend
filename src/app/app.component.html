@@ -1,12 +1,32 @@
 <div class="container-fluid">
 
     <h1><a href="http://localhost:4200/">{{title}}</a></h1>
-
     <div class="btn-group">
         <button class="btn btn-primary" routerLink="/authors"> Authors </button>
         <button class="btn btn-primary" routerLink="/books"> Books</button>
         <button class="btn btn-primary" routerLink="/pages"> Pages</button>
     </div>
-</div>
 
+    <div   *ngIf="isHomeRoute()">
+        <h2>Find author</h2>
+        <div  class="centerButton">
+        <input type="text" class="form-control" placeholder="Author id..." name="id" [(ngModel)]="x">
+        <button  class="btn btn-primary submit" (click)="findAuthor(x)">submit</button>
+    </div>  
+        <div *ngIf="findedAuthor && isHomeRoute()">
+            <p class="author" (click)="authorSelect(findedAuthor)">{{findedAuthor.name}} </p>
+            <div *ngIf="authorIsSelected">
+                <h2>Books of {{findedAuthor.name}}</h2>
+                <div class="col-xs-12 col-md-6 col-lg-4" *ngFor="let book of findedAuthor.books;">
+                    <div class="stranica">
+                        <div class="aaa">
+                            <p class="booktitle"> {{book.title}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 <router-outlet></router-outlet>

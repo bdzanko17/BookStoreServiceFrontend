@@ -1,50 +1,51 @@
-ul{
+ul {
     border: solid 1px;
-    
 }
 
-ul:hover{
+ul:hover {
     background-color: bisque;
 }
-li{
-        cursor: pointer;
 
+li {
+    cursor: pointer;
 }
- li:hover {
+
+h2 {
+    color: green
+}
+
+li:hover {
     color: #607D8B;
     background-color: #DDD;
     left: .1em;
-  }
-.container{
-   
+}
+
+.container {
     background-color: red;
 }
 
-
-
- .aaa{
-     background-color: chartreuse;
- }
-
- .conent{
-    overflow-wrap: break-word;
- }
-
- .stranica{
-     background-color: lemonchiffon;
-  
-    margin: 10px;
-   border: 1px solid black;
-
-    
- }
-
-.center
-{
-        text-align: center;
-        color: chocolate;
-        background-color: rosybrown;
+.aaa {
+    background-color: chartreuse;
 }
-ul{
+
+.conent {
+    overflow-wrap: break-word;
+}
+
+.stranica {
+    background-color: lemonchiffon;
+    margin: 10px;
+    border: 1px solid black;
+    height: 300px;
+    width: 200px;
+}
+
+.center {
+    text-align: center;
+    color: chocolate;
+    background-color: rosybrown;
+}
+
+ul {
     list-style-type: none;
-    }
+}

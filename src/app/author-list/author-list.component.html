@@ -7,8 +7,24 @@
       </div>
     </li>
   </ul>
+  
   <div class="btn-group" role="group" aria-label="Basic example">
     <button routerLink="/author" type="button" class="btn btn-secondary">Add new author</button>
     <button type="button" class="btn btn-secondary" (click)="deleteAuthor(selectedAuthor)">Delete author</button>
+  </div>
+
+  <div class="row" *ngIf="selectedAuthor &&selectedAuthor.books.length">
+    <div class="container-fluid">
+      <div class="center">
+        <h1>Books of {{selectedAuthor.name}}</h1>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4" *ngFor="let book of selectedAuthor.books;  let isLast=last ">
+      <div class="stranica">
+        <div class="aaa">
+          <p class="booktitle"> {{book.title}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

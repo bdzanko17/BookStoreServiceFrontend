@@ -1,26 +1,30 @@
-
 <div class="container-fluid">
-  <form  #bookFrom="ngForm" style="max-width: 20rem;" (ngSubmit)="onSubmit()">
+  <form #bookFrom="ngForm" style="max-width: 20rem;" (ngSubmit)="onSubmit()">
     <br>
     <div class="form-group">
       <label>Input the title of book</label><br>
-      <input type="text" class="form-control"  placeholder="Title..." name="title" [(ngModel)]="newBook.title">
+      <input type="text" class="form-control" placeholder="Title..." name="title" [(ngModel)]="newBook.title">
       <br>
       <label>Input the genre of book</label><br>
-      <input type="text" class="form-control"  placeholder="Genre..." name="genre" [(ngModel)]="newBook.genre">
+      <input type="text" class="form-control" placeholder="Genre..." name="genre" [(ngModel)]="newBook.genre">
     </div>
     <span>Chose author</span>
     <ul class="list-group ">
-        <li *ngFor="let author of authors" (click)="onSelect(author)">
-          <div class="author-list list-group-item">
-            <span class="badge pull-left">{{author.id}}</span> {{author.name}}
-          </div>
-        </li>
-      </ul>
-  <div *ngIf= "selectedAuthor">
-
-    <h2>{{selectedAuthor.name}} selected</h2>
-  </div>
-  <button style="margin-left: 20px" class="btn btn-primary" type="submit"> Add book</button>
-    </form>
+      <li *ngFor="let author of authors" (click)="onSelect(author)">
+        <div class="author-list list-group-item">
+          <span class="badge pull-left">{{author.id}}</span> {{author.name}}
+        </div>
+      </li>
+    </ul>
+    <div *ngIf="selectedAuthor">
+      <h2>{{selectedAuthor.name}} selected</h2>
     </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button class="btn btn-primary" type="submit"> Add book</button>
+      <button class="btn btn-primary" type="submit" (click)="click()"> Add author</button>
+    </div>
+    <div  *ngIf="noAuthor">
+    <app-create-author></app-create-author>
+    </div>
+  </form>
+</div>
