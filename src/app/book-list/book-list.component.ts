@@ -20,7 +20,6 @@ export class BookListComponent implements OnInit {
 
   onSelectBook(book: Book) {
     this.selectedBook = book;
-    console.log(this.selectedBook.pages[0].content);
   }
 
 

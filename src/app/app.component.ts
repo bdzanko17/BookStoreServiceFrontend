@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { AuthorService } from './author.service';
-import { Author } from './author';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
+import {NgForm} from '@angular/forms';
+import {AuthorService} from './author.service';
+import {Author} from './author';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   constructor(private authorService: AuthorService, private router: Router) {
   }
+
   title = 'BookStore';
   findedAuthor: Author;
   x: number;
@@ -20,12 +21,13 @@ export class AppComponent {
   findAuthor(x) {
     this.authorIsSelected = false;
     console.log(x);
-    this.authorService.getAuthor(x).subscribe(data => this.findedAuthor = data)
+    this.authorService.getAuthor(x).subscribe(data => this.findedAuthor = data);
   }
 
   isHomeRoute() {
     return this.router.url === '/';
   }
+
   authorSelect(x) {
     this.authorIsSelected = true;
   }

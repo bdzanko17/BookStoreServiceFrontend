@@ -14,7 +14,7 @@
     </li>
   </ul>
   <button routerLink="/book" type="button" class="btn btn-danger">Add new book</button>
-  <div class="row" *ngIf="selectedBook">
+  <div class="row" *ngIf="selectedBook  && selectedBook.pages.length > 0">
     <div class="container-fluid">
       <div class="center">
         <h1>Pages</h1>
